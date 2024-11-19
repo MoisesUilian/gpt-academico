@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT Acadêmico</title>
+    <style>
+        * {
+            margin: 0;
+            padding-left: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1em;
+        }
+
+        /* geral */
+        .pagina {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(pagina-p.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .clique {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 90%;
+            max-width: 700px;
+            background-color: rgb(92, 92, 92);
+            border: 1px solid #020053;
+            border-radius: 30px;
+            padding: 20px;
+            box-shadow: 1px 1px 50px #020053;
+        }
+
+        .clique > h1 {
+            text-align: center;
+            font-weight: 800;
+            font-size: 1.5em;
+            color: white;
+            padding-bottom: 15px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.521);
+        }
+
+        .clique > p {
+            font-size: 1em;
+            color: white;
+        }
+
+        .clique > p > a {
+            color: #020053;
+            /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.521); */
+        }
+        
+        .botao {
+            text-align: center;
+            text-decoration: none;
+            background-color: white;
+            color: black;
+            border-radius: 25px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #aceitar {
+            color: white;
+            background-color: #020053;
+            margin-top: 15px;
+        }
+
+        .botao:hover {
+            box-shadow: 1px 1px 10px #ffffff;
+        }
+
+        @media screen and (min-width: 500px) and (max-width: 800px) {
+        /* tablet */
+            .pagina {
+                background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(pagina-m.png);
+                background-repeat: no-repeat;
+                background-position: center top;
+                background-size: cover;
+            }
+        }
+
+        @media screen and (min-width: 769px) {
+        /* computador/tvs */
+            .pagina {
+                background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(pagina-g.png);
+                background-repeat: no-repeat;
+                background-position: center top;
+                background-size: cover;
+            }
+
+            .clique > h1 {
+                font-size: 2em;
+            }
+
+            .clique > p {
+                font-size: 1.2em;
+                text-align: justify;
+            }
+
+            .botao {
+                font-size: 1.1em;
+            text-shadow: none;
+            border-radius: 25px;
+            padding: 20px;
+            margin: 10px;
+           }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="pagina">
+        <div class="clique">
+            <h1>Permitir cookies no site</h1>
+            <p>Nosso site usa cookies. Ao continuar, assumimos sua permissão para implantar cookies conforme detalhado nossa <a href="https://go.hotmart.com/J96666894L">Política de Privacidade.</a></p>
+
+            <a href="https://go.hotmart.com/J96666894L" class="botao" id="aceitar">Aceitar</a>
+            <a href="https://go.hotmart.com/J96666894L" class="botao">Recusar</a>
+        </div>
+    </div>
+</body>
+</html>
